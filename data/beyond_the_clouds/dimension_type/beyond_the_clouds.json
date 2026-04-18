@@ -1,10 +1,16 @@
 {
+  "attributes": {
+    "minecraft:gameplay/nether_portal_spawns_piglin": true,
+    "minecraft:gameplay/bed_rule": {
+      "can_sleep": "always",
+      "can_set_spawn": "always",
+      "explodes": false
+    }
+  },
+  "has_ender_dragon_fight": false,
   "ambient_light": 0,
-  "bed_works": true,
   "coordinate_scale": 1,
-  "effects": "minecraft:overworld",
   "has_ceiling": false,
-  "has_raids": true,
   "has_skylight": true,
   "height": 384,
   "infiniburn": "#minecraft:infiniburn_overworld",
@@ -15,9 +21,5 @@
     "type": "minecraft:uniform",
     "min_inclusive": 0,
     "max_inclusive": 7
-  },
-  "natural": true,
-  "piglin_safe": false,
-  "respawn_anchor_works": false,
-  "ultrawarm": false
+  }
 }
