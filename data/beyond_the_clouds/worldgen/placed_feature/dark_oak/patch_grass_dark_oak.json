@@ -1,12 +1,38 @@
 {
-    "feature": "beyond_the_clouds:dark_oak/patch_grass_dark_oak",
-    "placement": [
-        {
-            "type": "minecraft:count_on_every_layer",
-            "count": 6
-        },
-        {
-            "type": "minecraft:biome"
-        }
-    ]
+  "feature": "beyond_the_clouds:dark_oak/patch_grass_dark_oak",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 6
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "count",
+      "count": 96
+    },
+    {
+      "type": "random_offset",
+      "xz_spread": {
+        "type": "trapezoid",
+        "min": -7,
+        "max": 7,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "trapezoid",
+        "min": -3,
+        "max": 3,
+        "plateau": 0
+      }
+    }
+  ]
 }
