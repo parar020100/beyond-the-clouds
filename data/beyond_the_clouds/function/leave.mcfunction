@@ -1,4 +1,5 @@
 advancement revoke @s only beyond_the_clouds:leave_dimension
+execute on vehicle if entity @s[type=minecraft:happy_ghast] run return run function beyond_the_clouds:leave_on_happy_ghast
 execute at @s in overworld run forceload add ~ ~
 execute in minecraft:overworld run tp @s ~ 448 ~
 execute at @s in minecraft:overworld positioned over motion_blocking run tp @s ~ ~10 ~
