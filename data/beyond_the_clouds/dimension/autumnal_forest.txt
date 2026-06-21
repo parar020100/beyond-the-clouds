@@ -1,0 +1,12 @@
+                {
+                    "biome": "nfb_dimensions:beyond_the_clouds/autumnal_forest",
+                    "parameters": {
+                        "continentalness": 0,
+                        "depth": 0,
+                        "erosion": 0,
+                        "humidity": 0.35,
+                        "temperature": -0.5,
+                        "weirdness": 0,
+                        "offset": 0
+                    }
+                },

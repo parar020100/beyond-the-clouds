@@ -1,0 +1,16 @@
+{
+  "feature": "beyond_the_clouds:lush/water_deltas",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 3
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

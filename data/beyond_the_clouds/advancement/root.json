@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "reach_dimension": {
+      "trigger": "changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "beyond_the_clouds:beyond_the_clouds"
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "A new frontier...",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "id": "minecraft:white_wool"
+    },
+    "show_toast": true,
+    "title": "Beyond the Clouds",
+    "background": "minecraft:block/white_concrete_powder"
+  },
+  "requirements": [
+    [
+      "reach_dimension"
+    ]
+  ]
+}

@@ -1,0 +1,1 @@
+$execute as @e[type=marker,nbt={data:{ownerID:$(ownerID)}}] at @s positioned ~ ~0.5 ~ if entity @p[distance=1..,scores={btc.playerID=$(ownerID)}] run function beyond_the_clouds:cloud_walk/unplace_cloud_block

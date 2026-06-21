@@ -1,0 +1,23 @@
+{
+    "type": "simple_random_selector",
+    "config": {
+        "features": [
+            {
+                "feature": "beyond_the_clouds:dark_oak/tree/11",
+                "placement": []
+            },
+            {
+                "feature": "beyond_the_clouds:dark_oak/tree/13",
+                "placement": []
+            },
+            {
+                "feature": "beyond_the_clouds:dark_oak/tree/15",
+                "placement": []
+            },
+            {
+                "feature": "beyond_the_clouds:dark_oak/tree/17",
+                "placement": []
+            }
+        ]
+    }
+}

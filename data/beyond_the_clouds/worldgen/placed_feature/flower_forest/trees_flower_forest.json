@@ -1,0 +1,74 @@
+{
+  "feature": {
+    "type": "random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": "beyond_the_clouds:flower_forest/small_birch",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": "beyond_the_clouds:flower_forest/big_birch",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.1,
+          "feature": {
+            "feature": "beyond_the_clouds:flower_forest/big_oak",
+            "placement": []
+          }
+        },
+        {
+          "chance": 0.5,
+          "feature": {
+            "feature": "beyond_the_clouds:flower_forest/small_oak",
+            "placement": []
+          }
+        }
+      ],
+      "default": {
+        "feature": "beyond_the_clouds:flower_forest/small_oak",
+        "placement": []
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 6,
+            "weight": 9
+          },
+          {
+            "data": 7,
+            "weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:oak_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}

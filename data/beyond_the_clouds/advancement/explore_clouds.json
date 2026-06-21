@@ -1,0 +1,135 @@
+{
+  "criteria": {
+    "cherry_islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:cherry_islands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "dark_forest_islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:dark_forest_islands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "flower_forest_islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:flower_forest_islands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "frozen_grove_islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:frozen_grove_islands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "autumnal_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:autumnal_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "lush_islands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "beyond_the_clouds:lush_islands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Discover all the biomes beyond the clouds",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "id": "minecraft:iron_boots"
+    },
+    "show_toast": true,
+    "title": "Adventurer"
+  },
+  "parent": "beyond_the_clouds:find_sky_village",
+  "requirements": [
+    [
+      "cherry_islands"
+    ],
+    [
+      "dark_forest_islands"
+    ],
+    [
+      "flower_forest_islands"
+    ],
+    [
+      "frozen_grove_islands"
+    ],
+    [
+      "lush_islands"
+    ],
+    [
+      "autumnal_forest"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

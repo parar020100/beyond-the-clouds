@@ -1,0 +1,12 @@
+{
+  "feature": "beyond_the_clouds:leaf_litter",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "count_on_every_layer",
+      "count": 8
+    }
+  ]
+}

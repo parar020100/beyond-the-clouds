@@ -1,0 +1,1 @@
+scoreboard players set @s btc.potion.cloud_walker.duration 0

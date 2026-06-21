@@ -1,0 +1,16 @@
+{
+    "feature": "beyond_the_clouds:dark_oak/amethyst_pillar",
+    "placement": [
+        {
+            "type": "count_on_every_layer",
+            "count": 1
+        },
+        {
+            "type": "rarity_filter",
+            "chance": 4
+        },
+        {
+            "type": "biome"
+        }
+    ]
+}

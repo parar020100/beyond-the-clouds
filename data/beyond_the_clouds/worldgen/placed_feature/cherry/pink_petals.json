@@ -1,0 +1,12 @@
+{
+    "feature": "beyond_the_clouds:cherry/pink_petals",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 8
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "y": {
+                "min": 330
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "beyond_the_clouds:enter"
+  }
+}

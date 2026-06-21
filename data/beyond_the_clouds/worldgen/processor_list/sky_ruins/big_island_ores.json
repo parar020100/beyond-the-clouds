@@ -1,0 +1,172 @@
+{
+    "processors": [
+        {
+            "processor_type": "capped",
+            "limit": 120,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:coal_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 120,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:copper_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 64,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:iron_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 16,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:gold_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 4,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:diamond_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 12,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:emerald_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 24,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:lapis_ore"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "processor_type": "capped",
+            "limit": 24,
+            "delegate": {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "input_predicate": {
+                            "predicate_type": "minecraft:block_match",
+                            "block": "stone"
+                        },
+                        "output_state": {
+                            "Name": "minecraft:redstone_ore"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

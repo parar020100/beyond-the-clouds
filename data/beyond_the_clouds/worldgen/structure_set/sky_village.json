@@ -1,0 +1,16 @@
+{
+    "structures": [
+        {
+            "structure": "beyond_the_clouds:sky_village",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 1789981420,
+        "frequency_reduction_method": "default",
+        "frequency": 0.6,
+        "spacing": 32,
+        "separation": 20
+    }
+}

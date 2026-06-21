@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "beyond_the_clouds:beyond_the_clouds",
+            "position": {
+              "y": {
+                "max": -48
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "beyond_the_clouds:leave"
+  }
+}

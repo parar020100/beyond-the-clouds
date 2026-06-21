@@ -1,0 +1,1 @@
+give @s potion[potion_contents={custom_color:14592255},custom_name=[{"text":"Potion of Cloud Walking","italic":false}],lore=[[{"text":"Cloud Walking (8:00)","italic":false,"color":"blue"}],"",[{"text":"Jump to go up, crouch to go down!","italic":false,"color":"gray"}]],custom_data={btc.item.cloud_walker_potion:1},tooltip_display={hidden_components:[tooltip_display]}]

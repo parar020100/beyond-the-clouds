@@ -1,0 +1,12 @@
+{
+    "feature": "beyond_the_clouds:dark_oak/patch_grass_dark_oak",
+    "placement": [
+        {
+            "type": "minecraft:count_on_every_layer",
+            "count": 6
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "consume": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "nfb_dimensions.btc.item.cloud_walker_potion": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "consume"
+    ]
+  ],
+  "rewards": {
+    "function": "beyond_the_clouds:cloud_walk/give_effect"
+  }
+}

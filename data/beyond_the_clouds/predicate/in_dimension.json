@@ -1,0 +1,6 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "dimension": "beyond_the_clouds:beyond_the_clouds"
+    }
+}

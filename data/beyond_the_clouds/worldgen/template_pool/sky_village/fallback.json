@@ -1,0 +1,68 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/armorerhouse1"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/generichouse1"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/generichouse2"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/library"
+            },
+            "weight": 1
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/mergedhouse1"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/farm1"
+            },
+            "weight": 2
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "processors": "minecraft:empty",
+                "location": "beyond_the_clouds:sky_village/small_empty"
+            },
+            "weight": 2
+        }
+    ],
+    "fallback": "minecraft:empty"
+}

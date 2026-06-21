@@ -1,0 +1,96 @@
+{
+  "type": "beyond_the_clouds:beyond_the_clouds",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "beyond_the_clouds:beyond_the_clouds",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "beyond_the_clouds:autumnal_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.35,
+            "temperature": -0.5,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:sky",
+          "parameters": {
+            "continentalness": -0.8,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "offset": 0,
+            "temperature": 0,
+            "weirdness": 0
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:cherry_islands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.2,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0.25
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:lush_islands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.6,
+            "temperature": 0.4,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:frozen_grove_islands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.1,
+            "temperature": -0.7,
+            "weirdness": 0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:dark_forest_islands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -0.35,
+            "weirdness": 0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "beyond_the_clouds:flower_forest_islands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.4,
+            "temperature": 0.2,
+            "weirdness": 0,
+            "offset": 0.2
+          }
+        }
+      ]
+    }
+  }
+}

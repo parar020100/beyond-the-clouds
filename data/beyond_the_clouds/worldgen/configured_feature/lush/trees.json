@@ -1,0 +1,89 @@
+{
+    "type": "random_selector",
+    "config": {
+        "default": {
+            "placement": [
+                {
+                    "type": "block_predicate_filter",
+                    "predicate": {
+                        "type": "minecraft:would_survive",
+                        "state": {
+                            "Name": "minecraft:jungle_sapling"
+                        }
+                    }
+                }
+            ],
+            "feature": "jungle_bush"
+        },
+        "features": [
+            {
+                "chance": 0.35,
+                "feature": {
+                    "placement": [
+                        {
+                            "type": "block_predicate_filter",
+                            "predicate": {
+                                "type": "minecraft:would_survive",
+                                "state": {
+                                    "Name": "minecraft:jungle_sapling"
+                                }
+                            }
+                        }
+                    ],
+                    "feature": "jungle_bush"
+                }
+            },
+            {
+                "chance": 0.2,
+                "feature": {
+                    "placement": [
+                        {
+                            "type": "block_predicate_filter",
+                            "predicate": {
+                                "type": "minecraft:would_survive",
+                                "state": {
+                                    "Name": "minecraft:jungle_sapling"
+                                }
+                            }
+                        }
+                    ],
+                    "feature": "jungle_tree"
+                }
+            },
+            {
+                "chance": 0.15,
+                "feature": {
+                    "placement": [
+                        {
+                            "type": "block_predicate_filter",
+                            "predicate": {
+                                "type": "minecraft:would_survive",
+                                "state": {
+                                    "Name": "minecraft:jungle_sapling"
+                                }
+                            }
+                        }
+                    ],
+                    "feature": "fancy_oak"
+                }
+            },
+            {
+                "chance": 0.3,
+                "feature": {
+                    "placement": [
+                        {
+                            "type": "block_predicate_filter",
+                            "predicate": {
+                                "type": "minecraft:would_survive",
+                                "state": {
+                                    "Name": "minecraft:jungle_sapling"
+                                }
+                            }
+                        }
+                    ],
+                    "feature": "mega_jungle_tree"
+                }
+            }
+        ]
+    }
+}

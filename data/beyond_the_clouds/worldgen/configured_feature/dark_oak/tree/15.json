@@ -1,0 +1,297 @@
+{
+  "type": "random_patch",
+  "config": {
+    "xz_spread": 1,
+    "y_spread": 0,
+    "tries": 32,
+    "feature": {
+      "placement": [],
+      "feature": {
+        "type": "random_selector",
+        "config": {
+          "default": {
+            "placement": [],
+            "feature": {
+              "type": "random_patch",
+              "config": {
+                "xz_spread": 1,
+                "y_spread": 5,
+                "tries": 5,
+                "feature": {
+                  "placement": [
+                    {
+                      "type": "environment_scan",
+                      "direction_of_search": "down",
+                      "max_steps": 5,
+                      "target_condition": {
+                        "type": "minecraft:solid",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ]
+                      }
+                    }
+                  ],
+                  "feature": {
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dark_oak_wood",
+                          "Properties": {
+                            "axis": "y"
+                          }
+                        }
+                      }
+                    },
+                    "type": "simple_block"
+                  }
+                }
+              }
+            }
+          },
+          "features": [
+            {
+              "chance": 0.15,
+              "feature": {
+                "placement": [],
+                "feature": {
+                  "type": "tree",
+                  "config": {
+                    "decorators": [],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_wood",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    },
+                    "ignore_vines": false,
+                    "force_dirt": false,
+                    "minimum_size": {
+                      "type": "minecraft:two_layers_feature_size",
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 1
+                    },
+                    "foliage_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_leaves",
+                        "Properties": {
+                          "distance": "4",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
+                      }
+                    },
+                    "trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_log",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    },
+                    "trunk_placer": {
+                      "type": "dark_oak_trunk_placer",
+                      "base_height": 15,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0
+                    },
+                    "foliage_placer": {
+                      "type": "dark_oak_foliage_placer",
+                      "offset": 0,
+                      "radius": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "chance": 0.2,
+              "feature": {
+                "placement": [
+                  {
+                    "type": "environment_scan",
+                    "direction_of_search": "up",
+                    "max_steps": 18,
+                    "target_condition": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        7,
+                        0
+                      ],
+                      "blocks": [
+                        "dark_oak_leaves"
+                      ]
+                    }
+                  }
+                ],
+                "feature": {
+                  "type": "tree",
+                  "config": {
+                    "decorators": [],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_wood",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    },
+                    "ignore_vines": false,
+                    "force_dirt": false,
+                    "minimum_size": {
+                      "type": "minecraft:two_layers_feature_size",
+                      "limit": 1,
+                      "lower_size": 0,
+                      "upper_size": 1
+                    },
+                    "foliage_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_leaves",
+                        "Properties": {
+                          "distance": "4",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
+                      }
+                    },
+                    "trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dark_oak_wood",
+                        "Properties": {
+                          "axis": "y"
+                        }
+                      }
+                    },
+                    "trunk_placer": {
+                      "type": "bending_trunk_placer",
+                      "base_height": 5,
+                      "height_rand_a": 0,
+                      "height_rand_b": 0,
+                      "bend_length": {
+                        "type": "uniform",
+                        "min_inclusive": 1,
+                        "max_inclusive": 3
+                      },
+                      "min_height_for_leaves": 8
+                    },
+                    "foliage_placer": {
+                      "type": "acacia_foliage_placer",
+                      "radius": 2,
+                      "offset": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "chance": 0.5,
+              "feature": {
+                "placement": [],
+                "feature": {
+                  "type": "random_patch",
+                  "config": {
+                    "xz_spread": 1,
+                    "y_spread": 5,
+                    "tries": 10,
+                    "feature": {
+                      "placement": [
+                        {
+                          "type": "environment_scan",
+                          "direction_of_search": "down",
+                          "max_steps": 5,
+                          "target_condition": {
+                            "type": "all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:solid",
+                                "offset": [
+                                  0,
+                                  -1,
+                                  0
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:solid",
+                                  "offset": [
+                                    0,
+                                    0,
+                                    0
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "feature": {
+                        "config": {
+                          "to_place": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dark_oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
+                          }
+                        },
+                        "type": "simple_block"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "chance": 0.15,
+              "feature": {
+                "placement": [],
+                "feature": {
+                  "type": "random_patch",
+                  "config": {
+                    "xz_spread": 10,
+                    "y_spread": 10,
+                    "tries": 8,
+                    "feature": {
+                      "placement": [],
+                      "feature": {
+                        "type": "minecraft:multiface_growth",
+                        "config": {
+                          "block": "minecraft:glow_lichen",
+                          "can_be_placed_on": [
+                            "dark_oak_log",
+                            "dark_oak_leaves",
+                            "grass_block"
+                          ],
+                          "can_place_on_ceiling": true,
+                          "can_place_on_floor": true,
+                          "can_place_on_wall": true,
+                          "chance_of_spreading": 0,
+                          "search_range": 20
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "feature": "beyond_the_clouds:autumnal_forest/grass",
+  "placement": [
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "count_on_every_layer",
+      "count": 9
+    }
+  ]
+}

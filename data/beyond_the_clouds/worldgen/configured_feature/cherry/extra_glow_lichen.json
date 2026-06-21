@@ -1,0 +1,27 @@
+{
+    "type": "random_patch",
+    "config": {
+      "xz_spread": 10,
+      "y_spread": 10,
+      "tries": 8,
+      "feature": {
+        "placement": [],
+        "feature": {
+          "type": "minecraft:multiface_growth",
+          "config": {
+            "block": "minecraft:glow_lichen",
+            "can_be_placed_on": [
+              "cherry_log",
+              "cherry_leaves",
+              "grass_block"
+            ],
+            "can_place_on_ceiling": true,
+            "can_place_on_floor": true,
+            "can_place_on_wall": true,
+            "chance_of_spreading": 0,
+            "search_range": 20
+          }
+        }
+      }
+    }
+}

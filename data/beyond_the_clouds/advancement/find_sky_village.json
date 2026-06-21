@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "sky_village": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "beyond_the_clouds:sky_village"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "Discover a village in the skies.",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "show_toast": true,
+    "title": "Sky Trader"
+  },
+  "parent": "beyond_the_clouds:root",
+  "requirements": [
+    [
+      "sky_village"
+    ]
+  ],
+  "rewards": {}
+}

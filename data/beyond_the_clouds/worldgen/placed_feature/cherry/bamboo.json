@@ -1,0 +1,16 @@
+{
+  "feature": "beyond_the_clouds:cherry/bamboo",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": {
+        "type": "biased_to_bottom",
+        "min_inclusive": 1,
+        "max_inclusive": 3
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
