@@ -95,6 +95,390 @@
           }
         ]
       }
+    },
+    "sky_islands_acid_badlands": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:acid_badlands"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_cold_swamp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:cold_swamp"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_cold_taiga": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:cold_taiga"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_fall_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:fall_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_old_fall_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:old_fall_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_old_jungle": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:old_jungle"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_old_mushroom_fields": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:old_mushroom_fields"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_redwoods": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:redwoods"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_beach": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_beach"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_spooky_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:spooky_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_bamboo_jungle": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_bamboo_jungle"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_cherry_grove": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_cherry_grove"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_dark_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_dark_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_jungle": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_jungle"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_mangrove_swamp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_mangrove_swamp"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_meadow": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_meadow"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_mushroom_fields": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_mushroom_fields"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_old_growth_birch_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_old_growth_birch_forest"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_old_growth_pine_taiga": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_old_growth_pine_taiga"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_old_growth_spruce_taiga": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_old_growth_spruce_taiga"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_pale_garden": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_pale_garden"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_savanna": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_savanna"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_snowy_plains": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_snowy_plains"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
+    },
+    "sky_islands_sky_swamp": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "location": {
+                "biomes": "sky_islands:sky_swamp"
+              }
+            },
+            "entity": "this"
+          }
+        ]
+      }
     }
   },
   "display": {
@@ -127,6 +511,78 @@
     ],
     [
       "autumnal_forest"
+    ],
+    [
+      "sky_islands_acid_badlands"
+    ],
+    [
+      "sky_islands_cold_swamp"
+    ],
+    [
+      "sky_islands_cold_taiga"
+    ],
+    [
+      "sky_islands_fall_forest"
+    ],
+    [
+      "sky_islands_old_fall_forest"
+    ],
+    [
+      "sky_islands_old_jungle"
+    ],
+    [
+      "sky_islands_old_mushroom_fields"
+    ],
+    [
+      "sky_islands_redwoods"
+    ],
+    [
+      "sky_islands_sky_beach"
+    ],
+    [
+      "sky_islands_spooky_forest"
+    ],
+    [
+      "sky_islands_sky_bamboo_jungle"
+    ],
+    [
+      "sky_islands_sky_cherry_grove"
+    ],
+    [
+      "sky_islands_sky_dark_forest"
+    ],
+    [
+      "sky_islands_sky_jungle"
+    ],
+    [
+      "sky_islands_sky_mangrove_swamp"
+    ],
+    [
+      "sky_islands_sky_meadow"
+    ],
+    [
+      "sky_islands_sky_mushroom_fields"
+    ],
+    [
+      "sky_islands_sky_old_growth_birch_forest"
+    ],
+    [
+      "sky_islands_sky_old_growth_pine_taiga"
+    ],
+    [
+      "sky_islands_sky_old_growth_spruce_taiga"
+    ],
+    [
+      "sky_islands_sky_pale_garden"
+    ],
+    [
+      "sky_islands_sky_savanna"
+    ],
+    [
+      "sky_islands_sky_snowy_plains"
+    ],
+    [
+      "sky_islands_sky_swamp"
     ]
   ],
   "rewards": {

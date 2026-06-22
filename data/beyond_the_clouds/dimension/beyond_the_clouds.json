@@ -89,6 +89,297 @@
             "weirdness": 0,
             "offset": 0.2
           }
+        },
+        {
+          "biome": "sky_islands:cold_swamp",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -0.5,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:redwoods",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": -0.5,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:spooky_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.3,
+            "temperature": 0.2,
+            "weirdness": 0,
+            "offset": 0.2
+          }
+        },
+        {
+          "biome": "sky_islands:sky_beach",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.6,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:old_mushroom_fields",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": 0.8,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:old_jungle",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "temperature": 0.8,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:old_fall_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.55,
+            "temperature": -0.2,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:fall_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -0.2,
+            "weirdness": 0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "sky_islands:cold_taiga",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -1,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:acid_badlands",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": 0.5,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_pale_garden",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": 0.2,
+            "weirdness": 0,
+            "offset": 0.2
+          }
+        },
+        {
+          "biome": "sky_islands:sky_swamp",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_snowy_plains",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": -1,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_savanna",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": 0.5,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_old_growth_spruce_taiga",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": -0.7,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_old_growth_pine_taiga",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -0.7,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_old_growth_birch_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": 0,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_mushroom_fields",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": 0.8,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_meadow",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": -0.4,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_mangrove_swamp",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": [
+              -2,
+              2
+            ],
+            "humidity": 0.5,
+            "temperature": 0.7,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_jungle",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0,
+            "temperature": 0.7,
+            "weirdness": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "sky_islands:sky_dark_forest",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.3,
+            "temperature": 0.2,
+            "weirdness": 0,
+            "offset": 0.2
+          }
+        },
+        {
+          "biome": "sky_islands:sky_cherry_grove",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": 0.5,
+            "temperature": -0.4,
+            "weirdness": 0,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "sky_islands:sky_bamboo_jungle",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": 0,
+            "humidity": -0.5,
+            "temperature": 0.7,
+            "weirdness": 0,
+            "offset": 0
+          }
         }
       ]
     }
