@@ -1,8 +1,8 @@
 {
   "attributes": {
-    "minecraft:visual/fog_color": 8484720,
-    "minecraft:visual/sky_color": 12171705,
-    "minecraft:visual/water_fog_color": 5597568
+    "minecraft:visual/fog_color": "#817770",
+    "minecraft:visual/sky_color": "#b9b9b9",
+    "minecraft:visual/water_fog_color": "#556980"
   },
   "carvers": [
     "minecraft:cave",
@@ -11,10 +11,10 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "fog_color": 8484720,
-    "dry_foliage_color": 8293253,
-    "foliage_color": 8883574,
-    "grass_color": 7832178,
+    "fog_color": "#817770",
+    "dry_foliage_color": "#7e8b85",
+    "foliage_color": "#878d76",
+    "grass_color": "#778272",
     "additions_sound": {
       "sound": "minecraft:ambient.soul_sand_valley.additions",
       "tick_chance": 0.0012
@@ -27,9 +27,9 @@
     },
     "music": [],
     "music_volume": 0,
-    "sky_color": 12171705,
-    "water_color": 7768221,
-    "water_fog_color": 5597568,
+    "sky_color": "#b9b9b9",
+    "water_color": "#76889d",
+    "water_fog_color": "#556980",
     "particle": {
       "options": {
         "type": "minecraft:firefly"

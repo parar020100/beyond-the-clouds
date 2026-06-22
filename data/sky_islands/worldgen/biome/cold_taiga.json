@@ -1,19 +1,19 @@
 {
   "attributes": {
-    "minecraft:visual/fog_color": 15462911,
-    "minecraft:visual/sky_color": 11848958,
-    "minecraft:visual/water_fog_color": 337971
+    "minecraft:visual/fog_color": "#ebf1ff",
+    "minecraft:visual/sky_color": "#b4ccfe",
+    "minecraft:visual/water_fog_color": "#052833"
   },
   "temperature": -0.5,
   "downfall": 0.8,
   "has_precipitation": true,
   "effects": {
-    "sky_color": 11848958,
-    "fog_color": 15462911,
-    "water_color": 2070696,
-    "water_fog_color": 337971,
-    "grass_color": 15794168,
-    "foliage_color": 15794168,
+    "sky_color": "#b4ccfe",
+    "fog_color": "#ebf1ff",
+    "water_color": "#1f98a8",
+    "water_fog_color": "#052833",
+    "grass_color": "#f0fff8",
+    "foliage_color": "#f0fff8",
     "additions_sound": {
       "sound": "minecraft:ambient.crimson_forest.additions",
       "tick_chance": 0.0012
