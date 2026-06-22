@@ -1,5 +1,6 @@
 advancement revoke @s only beyond_the_clouds:enter_dimension
 execute on vehicle if entity @s[type=minecraft:happy_ghast] run return run function beyond_the_clouds:enter_on_happy_ghast
+execute on vehicle run return run function beyond_the_clouds:enter_on_vehicle
 execute at @s in beyond_the_clouds:beyond_the_clouds run forceload add ~ ~
 execute in beyond_the_clouds:beyond_the_clouds run tp @s ~ 0 ~
 execute at @s in beyond_the_clouds:beyond_the_clouds positioned over motion_blocking run tp @s ~ ~ ~
