@@ -1,0 +1,14 @@
+{
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:swamp_house/swamp_house_0",
+        "processors": "minecraft:empty"
+      }
+    }
+  ],
+  "fallback": "sky_islands:swamp_house"
+}

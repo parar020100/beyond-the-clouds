@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:vanilla_adapted/huge_brown_mushroom",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:vanilla_adapted/huge_red_mushroom",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.34,
+        "feature": "sky_islands:redwoods_features/small_spruce_2_checked"
+      },
+      {
+        "chance": 0.6,
+        "feature": "sky_islands:redwoods_features/mega_redwood_checked"
+      },
+      {
+        "chance": 0.01,
+        "feature": "minecraft:fallen_spruce_tree"
+      }
+    ],
+    "default": "minecraft:spruce_checked"
+  }
+}

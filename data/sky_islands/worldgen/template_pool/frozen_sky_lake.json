@@ -1,0 +1,14 @@
+{
+  "fallback": "sky_islands:frozen_sky_lake",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:sky_lakes/frozen_sky_lake",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

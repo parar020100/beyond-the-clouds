@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:rocks",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 3,
+    "salt": 54032913,
+    "frequency": 1
+  }
+}

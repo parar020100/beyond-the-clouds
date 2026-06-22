@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:flying_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 64377083,
+    "frequency": 1,
+    "spacing": 35,
+    "separation": 18
+  }
+}

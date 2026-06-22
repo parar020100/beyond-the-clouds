@@ -1,0 +1,32 @@
+{
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:forest_tower/islands/ft_island_0",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:forest_tower/islands/ft_island_1",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:forest_tower/islands/ft_island_2",
+        "processors": "minecraft:empty"
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "empty1",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:large_lakes/swamp_lake/edge_2/swamplake_a2",
+        "processors": "minecraft:empty"
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:small_mushroom_brown",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:small_mushroom_red",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:med_mushroom_brown",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.025,
+        "feature": {
+          "feature": "sky_islands:med_mushroom_red",
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/blue_mushroom_tree_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/brown_mushroom_tree_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/giant_mushroom_blue_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/giant_mushroom_brown_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/giant_mushroom_red_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/mega_blue_mushroom_tree_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/mega_brown_mushroom_tree_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/mega_red_mushroom_tree_checked"
+      },
+      {
+        "chance": 0.1111111,
+        "feature": "sky_islands:mushroom_checked/red_mushroom_tree_checked"
+      }
+    ],
+    "default": "sky_islands:mushroom_checked/giant_mushroom_red_checked"
+  }
+}

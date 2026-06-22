@@ -1,0 +1,13 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:feature_pool_element",
+        "feature": "sky_islands:small_old_dark_oak",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

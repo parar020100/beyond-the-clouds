@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "sky_islands:birch_forest_features/birch_forest_with_roots",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "sky_islands:birch_forest_features/birch_forest_with_mega_trees",
+      "placement": []
+    }
+  }
+}

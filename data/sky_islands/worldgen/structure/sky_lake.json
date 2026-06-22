@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_beach"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "start_pool": "sky_islands:sky_lake",
+  "size": 7,
+  "start_height": {
+    "absolute": 30
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.6,
+        "feature": "sky_islands:redwoods_features/small_spruce_2_checked"
+      },
+      {
+        "chance": 0.4,
+        "feature": "sky_islands:cold_swamp_vegetation/small_birch_checked"
+      }
+    ],
+    "default": "sky_islands:cold_swamp_vegetation/small_birch_checked"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_old_growth_pine_taiga",
+    "sky_islands:sky_old_growth_spruce_taiga"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_pool": "sky_islands:taiga_house",
+  "size": 7,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 60
+    },
+    "max_inclusive": {
+      "absolute": 62
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}
