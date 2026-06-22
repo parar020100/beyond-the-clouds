@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "sky_islands:acid_spring_pool",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "sky_islands:acid_spring_with_deadtrees",
+      "placement": []
+    }
+  }
+}

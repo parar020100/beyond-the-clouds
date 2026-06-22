@@ -1,0 +1,15 @@
+{
+  "feature": "sky_islands:mushroom_trees/giant_mushroom_red",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:red_mushroom",
+          "Properties": {}
+        }
+      }
+    }
+  ]
+}

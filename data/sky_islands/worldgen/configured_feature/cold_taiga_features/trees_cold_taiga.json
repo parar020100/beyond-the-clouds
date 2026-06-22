@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "sky_islands:cold_taiga_features/mega_snowy_spruce_checked",
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "sky_islands:cold_taiga_features/mega_snowy_spruce_checked"
+      },
+      {
+        "chance": 0.3,
+        "feature": "sky_islands:cold_taiga_features/mega_snowy_pine_checked"
+      },
+      {
+        "chance": 0.08,
+        "feature": "sky_islands:cold_taiga_features/mega_ice_spruce_checked"
+      },
+      {
+        "chance": 0.12,
+        "feature": "sky_islands:cold_taiga_features/ice_spruce_checked"
+      },
+      {
+        "chance": 0.3,
+        "feature": "sky_islands:cold_taiga_features/snowy_spruce_checked"
+      }
+    ]
+  }
+}

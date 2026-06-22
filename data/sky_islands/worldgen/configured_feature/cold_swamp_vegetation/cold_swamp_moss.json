@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "sky_islands:cold_swamp_vegetation/cold_swamp_with_bushs",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "sky_islands:cold_swamp_vegetation/cold_swamp_with_smalltrees",
+      "placement": []
+    }
+  }
+}

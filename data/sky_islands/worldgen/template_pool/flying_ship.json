@@ -1,0 +1,15 @@
+{
+  "fallback": "sky_islands:flying_ship",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:flying_ship/flying_ship",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

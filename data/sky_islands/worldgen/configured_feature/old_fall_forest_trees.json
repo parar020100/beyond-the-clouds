@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.25,
+        "feature": "sky_islands:giant_oak_checked"
+      },
+      {
+        "chance": 0.25,
+        "feature": "sky_islands:giant_birch_checked"
+      },
+      {
+        "chance": 0.25,
+        "feature": "sky_islands:fall_bush_checked"
+      },
+      {
+        "chance": 0.125,
+        "feature": "sky_islands:old_pine_checked"
+      },
+      {
+        "chance": 0.125,
+        "feature": "sky_islands:old_spruce_checked"
+      }
+    ],
+    "default": "sky_islands:giant_oak_checked"
+  }
+}

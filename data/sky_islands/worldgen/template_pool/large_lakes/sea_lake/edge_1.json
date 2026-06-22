@@ -1,0 +1,15 @@
+{
+  "name": "empty1",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:large_lakes/sea_lake/edge_1/sealake_a1",
+        "processors": "minecraft:empty"
+      }
+    }
+  ],
+  "fallback": "minecraft:empty"
+}

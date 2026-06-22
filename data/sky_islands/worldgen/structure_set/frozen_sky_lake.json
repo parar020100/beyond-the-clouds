@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:frozen_sky_lake",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 611519695,
+    "frequency": 1,
+    "spacing": 30,
+    "separation": 15
+  }
+}

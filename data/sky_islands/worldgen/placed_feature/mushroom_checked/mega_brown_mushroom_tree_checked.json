@@ -1,0 +1,15 @@
+{
+  "feature": "sky_islands:mushroom_trees/mega_brown_mushroom_tree",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:brown_mushroom",
+          "Properties": {}
+        }
+      }
+    }
+  ]
+}

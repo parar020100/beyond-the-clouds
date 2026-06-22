@@ -1,0 +1,55 @@
+{
+  "fallback": "sky_islands:spherical_monument",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:spherical_monument/spherical_monument_0",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:spherical_monument/spherical_monument_1",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:spherical_monument/spherical_monument_2",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:spherical_monument/spherical_monument_3",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "sky_islands:spherical_monument/spherical_monument_4",
+        "override_liquid_settings": "apply_waterlogging",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "feature": "sky_islands:mushroom_trees/mega_blue_mushroom_tree",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:warped_fungus",
+          "Properties": {}
+        }
+      }
+    }
+  ]
+}

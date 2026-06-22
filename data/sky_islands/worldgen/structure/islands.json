@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_pale_garden",
+    "sky_islands:cold_swamp",
+    "sky_islands:redwoods",
+    "sky_islands:spooky_forest",
+    "sky_islands:sky_beach",
+    "sky_islands:old_mushroom_fields",
+    "sky_islands:old_jungle",
+    "sky_islands:old_fall_forest",
+    "sky_islands:fall_forest",
+    "sky_islands:cold_taiga",
+    "sky_islands:acid_badlands",
+    "sky_islands:sky_swamp",
+    "sky_islands:sky_snowy_plains",
+    "sky_islands:sky_savanna",
+    "sky_islands:sky_old_growth_spruce_taiga",
+    "sky_islands:sky_old_growth_pine_taiga",
+    "sky_islands:sky_old_growth_birch_forest",
+    "sky_islands:sky_mushroom_fields",
+    "sky_islands:sky_meadow",
+    "sky_islands:sky_mangrove_swamp",
+    "sky_islands:sky_jungle",
+    "sky_islands:sky_dark_forest",
+    "sky_islands:sky_cherry_grove",
+    "sky_islands:sky_bamboo_jungle"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "start_pool": "sky_islands:islands",
+  "size": 7,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 130
+    },
+    "max_inclusive": {
+      "absolute": 230
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

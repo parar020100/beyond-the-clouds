@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:spiders_lair",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 358579053,
+    "frequency": 1,
+    "spacing": 25,
+    "separation": 10
+  }
+}

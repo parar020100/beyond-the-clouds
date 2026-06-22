@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:forest_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 25,
+    "separation": 10,
+    "salt": 48850241,
+    "frequency": 1
+  }
+}

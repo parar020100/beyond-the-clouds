@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_mangrove_swamp",
+    "sky_islands:sky_swamp"
+  ],
+  "terrain_adaptation": "none",
+  "max_distance_from_center": 80,
+  "size": 7,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:witch",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 56
+    },
+    "max_inclusive": {
+      "absolute": 58
+    }
+  },
+  "start_pool": "sky_islands:swamp_house",
+  "step": "surface_structures",
+  "use_expansion_hack": false
+}

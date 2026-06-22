@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:multiface_growth",
+  "config": {
+    "block": "minecraft:glow_lichen",
+    "can_be_placed_on": [
+      "minecraft:pale_moss_block",
+      "minecraft:pale_oak_log",
+      "minecraft:pale_oak_wood",
+      "minecraft:grass_block"
+    ],
+    "can_place_on_ceiling": true,
+    "can_place_on_floor": true,
+    "can_place_on_wall": true,
+    "chance_of_spreading": 1,
+    "search_range": 20
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "sky_islands:mud_pool_with_lilys",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "sky_islands:mud_with_bushs",
+      "placement": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_jungle",
+    "sky_islands:sky_bamboo_jungle",
+    "sky_islands:old_jungle"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {
+    "axolotls": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:axolotl",
+          "weight": 1,
+          "minCount": 2,
+          "maxCount": 3
+        }
+      ]
+    }
+  },
+  "start_pool": "sky_islands:jungle_sky_lake",
+  "size": 7,
+  "start_height": {
+    "absolute": 30
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

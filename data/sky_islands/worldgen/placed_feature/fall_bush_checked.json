@@ -1,0 +1,15 @@
+{
+  "feature": "sky_islands:fall_bush",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "minecraft:azalea",
+          "Properties": {}
+        }
+      }
+    }
+  ]
+}

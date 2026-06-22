@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:swamp_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 25,
+    "separation": 10,
+    "salt": 53413156,
+    "frequency": 1
+  }
+}

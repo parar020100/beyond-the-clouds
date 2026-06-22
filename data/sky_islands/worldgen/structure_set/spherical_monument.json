@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "sky_islands:spherical_monument",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1080686586,
+    "frequency": 1,
+    "spacing": 60,
+    "separation": 40
+  }
+}

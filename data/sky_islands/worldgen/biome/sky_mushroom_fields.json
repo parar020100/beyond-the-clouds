@@ -1,0 +1,124 @@
+{
+  "attributes": {
+    "minecraft:visual/fog_color": 16708092,
+    "minecraft:visual/sky_color": 15911661,
+    "minecraft:visual/water_fog_color": 3343659
+  },
+  "temperature": 0.9,
+  "downfall": 1,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 15911661,
+    "fog_color": 16708092,
+    "water_color": 12599268,
+    "water_fog_color": 3343659,
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
+    "music_volume": 1,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:mooshroom",
+        "weight": 8,
+        "minCount": 4,
+        "maxCount": 8
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [
+      "sky_islands:vanilla_adapted/amethyst_geode"
+    ],
+    [
+      "sky_islands:vanilla_adapted/monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "sky_islands:vanilla_adapted/ore_gold",
+      "sky_islands:vanilla_adapted/ore_gold_lower",
+      "sky_islands:vanilla_adapted/ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "sky_islands:vanilla_adapted/ore_diamond",
+      "sky_islands:vanilla_adapted/ore_diamond_medium",
+      "sky_islands:vanilla_adapted/ore_diamond_large",
+      "sky_islands:vanilla_adapted/ore_diamond_buried",
+      "sky_islands:vanilla_adapted/ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:mushroom_island_vegetation",
+      "minecraft:brown_mushroom_taiga",
+      "minecraft:red_mushroom_taiga",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
+}
