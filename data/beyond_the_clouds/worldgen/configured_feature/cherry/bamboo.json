@@ -1,6 +1,6 @@
 {
-    "type": "bamboo",
-    "config": {
-        "probability": 0
-    }
+  "type": "bamboo",
+  "config": {
+    "probability": 0
+  }
 }

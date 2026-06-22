@@ -1,8 +1,8 @@
 {
-    "condition": "minecraft:location_check",
-    "predicate": {
-        "position": {
-            "y": -64
-        }
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "y": -64
     }
+  }
 }
