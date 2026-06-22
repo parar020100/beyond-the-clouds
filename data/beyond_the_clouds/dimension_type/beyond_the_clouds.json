@@ -1,5 +1,11 @@
 {
   "ambient_light": 0,
+  "attributes": {
+    "minecraft:visual/cloud_color": "#ccffffff",
+    "minecraft:visual/cloud_height": 192.33,
+    "minecraft:visual/fog_color": "#c0d8ff",
+    "minecraft:visual/sky_color": "#78a7ff"
+  },
   "bed_works": true,
   "coordinate_scale": 1,
   "effects": "minecraft:overworld",
@@ -19,5 +25,6 @@
   "natural": true,
   "piglin_safe": false,
   "respawn_anchor_works": false,
+  "timelines": "#minecraft:in_overworld",
   "ultrawarm": false
 }
