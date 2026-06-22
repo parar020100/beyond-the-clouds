@@ -3,7 +3,7 @@ execute on passengers run tag @s add btc.vehicle_transfer_rider
 execute on passengers if entity @s[type=minecraft:player] run advancement revoke @s only beyond_the_clouds:leave_dimension
 execute on passengers run ride @s dismount
 execute at @s in overworld run forceload add ~ ~
-execute in minecraft:overworld run tp @s ~ 320 ~
+execute in minecraft:overworld run tp @s ~ 500 ~
 execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.vehicle_transfer_rider] in minecraft:overworld at @e[tag=btc.vehicle_transfer_vehicle,limit=1] run tp @s ~ ~0.3 ~
 execute in minecraft:overworld as @e[tag=btc.vehicle_transfer_rider] at @s run ride @s mount @e[tag=btc.vehicle_transfer_vehicle,limit=1,sort=nearest]
 effect give @a[tag=btc.vehicle_transfer_rider] slow_falling 60 0 false
