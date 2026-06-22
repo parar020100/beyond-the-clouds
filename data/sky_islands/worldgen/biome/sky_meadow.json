@@ -1,19 +1,19 @@
 {
   "attributes": {
-    "minecraft:visual/fog_color": 9091071,
-    "minecraft:visual/sky_color": 3043583,
-    "minecraft:visual/water_fog_color": 337203
+    "minecraft:visual/fog_color": "#8ab7ff",
+    "minecraft:visual/sky_color": "#2e70ff",
+    "minecraft:visual/water_fog_color": "#052533"
   },
   "temperature": 0.5,
   "downfall": 0.8,
   "has_precipitation": true,
   "effects": {
-    "sky_color": 3043583,
-    "fog_color": 9091071,
-    "water_color": 957901,
-    "water_fog_color": 337203,
-    "grass_color": 6080063,
-    "foliage_color": 4030489,
+    "sky_color": "#2e70ff",
+    "fog_color": "#8ab7ff",
+    "water_color": "#0e9dcd",
+    "water_fog_color": "#052533",
+    "grass_color": "#5cc63f",
+    "foliage_color": "#3d8019",
     "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
     "mood_sound": {
       "sound": "minecraft:ambient.cave",

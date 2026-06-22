@@ -1,20 +1,20 @@
 {
   "attributes": {
-    "minecraft:visual/fog_color": 16115399,
-    "minecraft:visual/sky_color": 14663819,
-    "minecraft:visual/water_fog_color": 607032
+    "minecraft:visual/fog_color": "#f5e6c7",
+    "minecraft:visual/sky_color": "#dfc08b",
+    "minecraft:visual/water_fog_color": "#094338"
   },
   "temperature": 2,
   "downfall": 0,
   "has_precipitation": false,
   "creature_spawn_probability": 0.04,
   "effects": {
-    "sky_color": 14663819,
-    "fog_color": 16115399,
-    "water_color": 3064457,
-    "water_fog_color": 607032,
-    "grass_color": 9401933,
-    "foliage_color": 10387789,
+    "sky_color": "#dfc08b",
+    "fog_color": "#f5e6c7",
+    "water_color": "#2ec289",
+    "water_fog_color": "#094338",
+    "grass_color": "#8f764d",
+    "foliage_color": "#9e814d",
     "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
