@@ -77,11 +77,128 @@
         "if_true": {
           "type": "minecraft:biome",
           "biome_is": [
+            "sky_islands:sky_beach"
+          ]
+        },
+        "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "add_surface_depth": false,
+                "secondary_depth_range": 0,
+                "offset": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "minecraft:sand"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "add_surface_depth": true,
+                "secondary_depth_range": 0,
+                "offset": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:sandstone"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "sky_islands:old_mushroom_fields",
+            "sky_islands:sky_mushroom_fields"
+          ]
+        },
+        "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "add_surface_depth": false,
+                "secondary_depth_range": 0,
+                "offset": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "minecraft:mycelium",
+                  "Properties": {
+                    "snowy": "false"
+                  }
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "add_surface_depth": true,
+                "secondary_depth_range": 0,
+                "offset": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:dirt"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
             "beyond_the_clouds:lush_islands",
             "beyond_the_clouds:cherry_islands",
             "beyond_the_clouds:dark_forest_islands",
             "beyond_the_clouds:flower_forest_islands",
-            "beyond_the_clouds:autumnal_forest"
+            "beyond_the_clouds:autumnal_forest",
+            "sky_islands:acid_badlands",
+            "sky_islands:cold_swamp",
+            "sky_islands:cold_taiga",
+            "sky_islands:fall_forest",
+            "sky_islands:old_fall_forest",
+            "sky_islands:old_jungle",
+            "sky_islands:redwoods",
+            "sky_islands:spooky_forest",
+            "sky_islands:sky_bamboo_jungle",
+            "sky_islands:sky_cherry_grove",
+            "sky_islands:sky_dark_forest",
+            "sky_islands:sky_jungle",
+            "sky_islands:sky_mangrove_swamp",
+            "sky_islands:sky_meadow",
+            "sky_islands:sky_old_growth_birch_forest",
+            "sky_islands:sky_old_growth_pine_taiga",
+            "sky_islands:sky_old_growth_spruce_taiga",
+            "sky_islands:sky_pale_garden",
+            "sky_islands:sky_savanna",
+            "sky_islands:sky_snowy_plains",
+            "sky_islands:sky_swamp"
           ]
         },
         "then_run": {
