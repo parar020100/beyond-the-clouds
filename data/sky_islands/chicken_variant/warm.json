@@ -1,0 +1,19 @@
+{
+  "asset_id": "minecraft:entity/chicken/warm_chicken",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "sky_islands:sky_jungle",
+          "sky_islands:sky_bamboo_jungle",
+          "sky_islands:sky_savanna",
+          "sky_islands:sky_mangrove_swamp",
+          "sky_islands:acid_badlands",
+          "sky_islands:old_jungle"
+        ]
+      },
+      "priority": 1
+    }
+  ]
+}

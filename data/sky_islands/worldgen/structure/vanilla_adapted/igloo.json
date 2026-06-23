@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:igloo",
+  "biomes": "sky_islands:sky_snowy_plains",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

@@ -1,5 +1,24 @@
 # Sky Islands Integration Plan
 
+## Update 2026-06-23
+
+Done in the latest pass:
+
+- Fixed `sky_islands:archaeology/mineshaft_island` loot parse issue: replaced invalid `minecraft:chain` entry with `minecraft:iron_ingot` and normalized `dead_bush` to `minecraft:dead_bush`.
+- Adapted underground `sky_islands:vanilla_adapted` placed features for the custom dimension: removed negative Y ranges and relative `above_bottom`/`below_top` anchors from ore/geode/monster-room wrappers.
+- Finished the main tree/leaf wrapper pass for `trees_savanna`, `trees_windswept_hills`, `fallen_oak_tree`, `fallen_spruce_tree`, `oak_leaf_litter`, `fancy_oak_leaf_litter`, and `spruce_checked`.
+- Added placed wrappers for the tree selectors so biome feature lists reference placed features, not configured features.
+- Added missing template pools discovered in logs/tests: `beyond_the_clouds:sky_village/hall` and `sky_islands:forest_tower/tower`.
+- Checked template pool JSON links, NBT custom links, and biome/placed/configured registry links.
+
+Still open:
+
+- Re-test current datapack in-game and check fresh `latest.log` for remaining `Empty height range`, loot, pool, or structure warnings.
+- Continue visual/gameplay validation of every imported biome and structure.
+- Full 1.21.11 format audit for audio/music/mood/animal variants and other registry-format changes.
+- Decide later whether to create custom analogs for source-pack vanilla structure overrides.
+- Final cleanup of unused leftovers after the in-game test pass.
+
 Цель: перенести фичи из `maa-s-sky-islands-lite-1-21-5` в `Beyond the Clouds`, получить один финальный датапак и не переопределять vanilla Overworld.
 
 ## Важное правило
@@ -432,3 +451,28 @@ Template pools:
 - проверить JSON formatting;
 - проверить, что `_source_packs` не участвует в финальном datapack;
 - прогнать sanity-checks по ссылкам.
+
+## Update 2026-06-23: vanilla overrides without Overworld overrides
+
+Done:
+
+- added custom copies of source vanilla structures under `sky_islands:vanilla_adapted/*`;
+- added custom structure sets for villages, pillager outposts, ruined portals, mineshafts, igloos, woodland mansions, swamp huts, ancient cities, trail ruins, and trial chambers;
+- kept source spacing for structure sets that the source pack changed: ancient cities, trail ruins, trial chambers;
+- copied source-modified village/outpost template pools under `sky_islands:vanilla_adapted/*`;
+- copied source-modified taiga village meeting point NBT under `sky_islands:vanilla_adapted/*`;
+- added pool aliases so adapted villages/outposts use the custom template pools without overriding `minecraft:*`;
+- added custom cold/warm chicken, cow, frog, and pig variants under `sky_islands:*_variant/*`;
+- added custom wolf variants under `sky_islands:wolf_variant/*`, excluding default `pale`;
+- added `replace: false` rabbit/fox biome tags with only custom sky biome values;
+- ran JSON validation and registry link sanity-checks successfully.
+
+Still intentionally not copied:
+
+- `data/minecraft/dimension/overworld.json`;
+- `data/minecraft/dimension_type/overworld.json`;
+- `data/minecraft/worldgen/noise_settings/overworld.json`;
+- `data/minecraft/worldgen/noise/continentalness.json`;
+- `data/minecraft/worldgen/noise/temperature.json`;
+- `data/minecraft/advancement/adventure/adventuring_time.json`;
+- default/temperate animal variants with unconditional spawn conditions.

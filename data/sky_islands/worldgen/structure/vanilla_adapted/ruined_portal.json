@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:ruined_portal",
+  "biomes": [
+    "sky_islands:cold_swamp",
+    "sky_islands:redwoods",
+    "sky_islands:spooky_forest",
+    "sky_islands:sky_beach",
+    "sky_islands:old_mushroom_fields",
+    "sky_islands:old_jungle",
+    "sky_islands:old_fall_forest",
+    "sky_islands:fall_forest",
+    "sky_islands:cold_taiga",
+    "sky_islands:acid_badlands",
+    "sky_islands:sky_pale_garden",
+    "sky_islands:sky_swamp",
+    "sky_islands:sky_snowy_plains",
+    "sky_islands:sky_savanna",
+    "sky_islands:sky_old_growth_spruce_taiga",
+    "sky_islands:sky_old_growth_pine_taiga",
+    "sky_islands:sky_old_growth_birch_forest",
+    "sky_islands:sky_mushroom_fields",
+    "sky_islands:sky_meadow",
+    "sky_islands:sky_mangrove_swamp",
+    "sky_islands:sky_jungle",
+    "sky_islands:sky_dark_forest",
+    "sky_islands:sky_cherry_grove",
+    "sky_islands:sky_bamboo_jungle"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "setups": [
+    {
+      "placement": "underground",
+      "air_pocket_probability": 1,
+      "mossiness": 0.2,
+      "overgrown": false,
+      "vines": false,
+      "can_be_cold": true,
+      "replace_with_blackstone": false,
+      "weight": 0.5
+    },
+    {
+      "placement": "on_land_surface",
+      "air_pocket_probability": 0.5,
+      "mossiness": 0.2,
+      "overgrown": false,
+      "vines": false,
+      "can_be_cold": true,
+      "replace_with_blackstone": false,
+      "weight": 0.5
+    }
+  ]
+}

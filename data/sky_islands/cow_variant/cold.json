@@ -1,0 +1,21 @@
+{
+  "asset_id": "minecraft:entity/cow/cold_cow",
+  "model": "cold",
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": [
+          "sky_islands:cold_swamp",
+          "sky_islands:cold_taiga",
+          "sky_islands:redwoods",
+          "sky_islands:sky_old_growth_pine_taiga",
+          "sky_islands:sky_old_growth_spruce_taiga",
+          "sky_islands:sky_cherry_grove",
+          "sky_islands:sky_snowy_plains"
+        ]
+      },
+      "priority": 1
+    }
+  ]
+}

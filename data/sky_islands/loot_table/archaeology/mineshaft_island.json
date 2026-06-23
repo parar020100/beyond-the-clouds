@@ -61,7 +61,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "dead_bush",
+          "name": "minecraft:dead_bush",
           "weight": 4
         },
         {
@@ -126,7 +126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chain",
+          "name": "minecraft:iron_ingot",
           "weight": 4
         },
         {

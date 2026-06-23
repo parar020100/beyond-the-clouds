@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "sky_islands:sky_savanna",
+  "max_distance_from_center": 80,
+  "size": 6,
+  "spawn_overrides": {},
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 80
+    },
+    "max_inclusive": {
+      "absolute": 85
+    }
+  },
+  "start_pool": "minecraft:village/savanna/town_centers",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": true,
+  "pool_aliases": [
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/savanna/streets",
+      "target": "sky_islands:vanilla_adapted/village/savanna/streets"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/savanna/terminators",
+      "target": "sky_islands:vanilla_adapted/village/savanna/terminators"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/savanna/zombie/streets",
+      "target": "sky_islands:vanilla_adapted/village/savanna/zombie/streets"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/savanna/zombie/terminators",
+      "target": "sky_islands:vanilla_adapted/village/savanna/zombie/terminators"
+    }
+  ]
+}

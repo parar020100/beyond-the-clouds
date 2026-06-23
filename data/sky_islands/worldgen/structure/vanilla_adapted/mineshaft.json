@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:mineshaft",
+  "biomes": "sky_islands:sky_snowy_plains",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "mineshaft_type": "normal"
+}

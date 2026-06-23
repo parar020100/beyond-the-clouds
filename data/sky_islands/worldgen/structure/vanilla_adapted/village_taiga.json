@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "sky_islands:sky_old_growth_pine_taiga",
+    "sky_islands:sky_old_growth_spruce_taiga",
+    "sky_islands:cold_taiga",
+    "sky_islands:redwoods"
+  ],
+  "max_distance_from_center": 80,
+  "size": 6,
+  "spawn_overrides": {},
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 80
+    },
+    "max_inclusive": {
+      "absolute": 85
+    }
+  },
+  "start_pool": "sky_islands:vanilla_adapted/village/taiga/town_centers",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "use_expansion_hack": true,
+  "pool_aliases": [
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/taiga/town_centers",
+      "target": "sky_islands:vanilla_adapted/village/taiga/town_centers"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/taiga/streets",
+      "target": "sky_islands:vanilla_adapted/village/taiga/streets"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/taiga/terminators",
+      "target": "sky_islands:vanilla_adapted/village/taiga/terminators"
+    },
+    {
+      "type": "minecraft:direct",
+      "alias": "minecraft:village/taiga/zombie/streets",
+      "target": "sky_islands:vanilla_adapted/village/taiga/zombie/streets"
+    }
+  ]
+}
