@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:woodland_mansion",
+  "biomes": [
+    "sky_islands:sky_dark_forest",
+    "sky_islands:spooky_forest"
+  ],
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_box"
+}

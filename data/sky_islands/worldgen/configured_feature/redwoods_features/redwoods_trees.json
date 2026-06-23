@@ -26,9 +26,9 @@
       },
       {
         "chance": 0.01,
-        "feature": "minecraft:fallen_spruce_tree"
+        "feature": "sky_islands:vanilla_adapted/fallen_spruce_tree"
       }
     ],
-    "default": "minecraft:spruce_checked"
+    "default": "sky_islands:vanilla_adapted/spruce_checked"
   }
 }
