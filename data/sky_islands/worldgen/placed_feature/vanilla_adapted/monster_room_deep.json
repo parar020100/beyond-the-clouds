@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:ore_diamond_buried",
+  "feature": "minecraft:monster_room",
   "placement": [
     {
       "type": "minecraft:count",
@@ -11,9 +11,9 @@
     {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
+        "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 60
+          "absolute": 64
         },
         "min_inclusive": {
           "absolute": 0

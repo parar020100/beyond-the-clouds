@@ -10,14 +10,19 @@ Done in the latest pass:
 - Added placed wrappers for the tree selectors so biome feature lists reference placed features, not configured features.
 - Added missing template pools discovered in logs/tests: `beyond_the_clouds:sky_village/hall` and `sky_islands:forest_tower/tower`.
 - Checked template pool JSON links, NBT custom links, and biome/placed/configured registry links.
+- Audited source coverage: no missing source `data/sky_islands` files, no missing expected mapped vanilla-adapted files, no leftover removed vanilla-adapted structures/sets.
+- Removed now-unneeded vanilla-adapted ancient city, igloo, mineshaft, trail ruins, and trial chambers.
+- Removed diamond ore from world generation: deleted `ore_diamond`, `ore_diamond_medium`, `ore_diamond_large`, and `ore_diamond_buried` placed-feature wrappers and removed their biome references.
+- Added non-negative wrappers for `ore_redstone_lower` and `ore_lapis_buried`, and replaced remaining direct negative-Y vanilla underground references in imported biomes.
+- Replaced `minecraft:monster_room_deep` with a dedicated non-negative adapted wrapper and `minecraft:amethyst_geode` in `lush_islands` with the adapted geode wrapper.
+- Re-ran JSON validation, custom reference sanity-check, source `data/sky_islands` coverage audit, `data/minecraft` audit, removed-structure audit, and diamond-ore audit.
 
 Still open:
 
-- Re-test current datapack in-game and check fresh `latest.log` for remaining `Empty height range`, loot, pool, or structure warnings.
+- Re-test current datapack in-game and check fresh `latest.log` for remaining loot, pool, structure, or height warnings.
 - Continue visual/gameplay validation of every imported biome and structure.
-- Full 1.21.11 format audit for audio/music/mood/animal variants and other registry-format changes.
-- Decide later whether to create custom analogs for source-pack vanilla structure overrides.
-- Final cleanup of unused leftovers after the in-game test pass.
+- Optional full 1.21.11 format audit for audio/music/mood and any future registry-format changes.
+- When packaging the final datapack, exclude `_source_packs`; it is only a working source folder.
 
 Цель: перенести фичи из `maa-s-sky-islands-lite-1-21-5` в `Beyond the Clouds`, получить один финальный датапак и не переопределять vanilla Overworld.
 
@@ -42,7 +47,7 @@ Still open:
 Статус:
 
 - Сделано: source pack лежит в `_source_packs`.
-- Сделано: vanilla Overworld не переопределяется; в `data/minecraft` сейчас только `tags/functions/load.json` и `tags/functions/tick.json`.
+- Сделано: vanilla Overworld не переопределяется; в `data/minecraft` сейчас только function tags и добавочные biome tags для rabbits/foxes.
 - Сделано с отклонением: используется `sky_islands:*`, а не `beyond_the_clouds:sky_islands/*`.
 
 ## Группа 1. Базовые custom features
@@ -114,7 +119,7 @@ Placed features:
 
 - Сделано: скопированы `106` configured features.
 - Сделано: скопированы `78` placed features.
-- Частично: ссылки уже исправлялись после registry errors, но ещё нужен точный аудит tree/leaf wrappers и высотных ограничений.
+- Сделано: ссылки исправлены после registry errors; tree/leaf wrappers и высотные ограничения прошли финальный sanity-check.
 
 ## Группа 2. Vanilla feature overrides
 
@@ -137,7 +142,7 @@ Placed features:
 
 - Сделано частично: создан слой `sky_islands:vanilla_adapted/*`.
 - Сделано: registry errors из-за missing `vanilla_adapted/*` исправлены.
-- Не завершено: надо доделать точность для `trees_savanna`, `trees_windswept_hills`, `fallen_oak_tree`, `fallen_spruce_tree`, `oak_leaf_litter`, `fancy_oak_leaf_litter` и проверить остальные tree/leaf overrides.
+- Сделано: точность для `trees_savanna`, `trees_windswept_hills`, `fallen_oak_tree`, `fallen_spruce_tree`, `oak_leaf_litter`, `fancy_oak_leaf_litter` и остальных tree/leaf overrides проверена техническим аудитом.
 
 ## Группа 3. Custom биомы `sky_islands`
 
@@ -211,7 +216,7 @@ Placed features:
 - Сделано: добавлены в biome source.
 - Сделано: добавлены в `explore_clouds`.
 - Сделано: visual colors продублированы в `attributes`.
-- Частично: feature accuracy ещё требует аудита.
+- Сделано: feature accuracy прошла технический аудит; negative-Y underground references заменены на custom wrappers, diamond ore удалена из генерации.
 
 ## Группа 5. Генератор островов
 
@@ -290,7 +295,7 @@ Template pools:
 - Сделано: перенесены `118` NBT-структур.
 - Сделано частично: biome selectors перепривязаны к `sky_islands:sky_*`.
 - Сделано частично: `rocks` поднят по высоте.
-- Не завершено: проверить все структуры в игре; разобрать missing/empty pools и высоты.
+- Сделано технически: structure/template-pool ссылки проверены, missing/empty pools из предыдущих логов исправлены; пользовательская проверка vanilla-adapted структур прошла более-менее нормально.
 
 ## Группа 7. Loot
 
@@ -306,7 +311,7 @@ Template pools:
 Статус:
 
 - Сделано: перенесены `4` loot tables.
-- Не завершено: игровой тест loot и проверка ссылок из NBT/template pools.
+- Сделано технически: loot tables перенесены, parse issues исправлены, ссылки из custom ресурсов прошли sanity-check; содержимое сундуков остаётся частью ручного игрового теста.
 
 ## Группа 8. Vanilla structure overrides
 
@@ -330,7 +335,8 @@ Template pools:
 Статус:
 
 - Сделано: vanilla structure overrides напрямую не перенесены.
-- Не сделано: custom аналоги vanilla structures пока не создавались.
+- Сделано: custom аналоги созданы только для нужных сейчас структур: mansion, pillager outpost, ruined portals, villages, swamp hut.
+- Удалено намеренно: ancient city, igloo, mineshaft, trail ruins, trial chambers, потому что они генерируются vanilla/другими путями и не нужны как `vanilla_adapted`.
 
 ## Группа 9. Прочее vanilla
 
@@ -349,8 +355,8 @@ Template pools:
 
 Статус:
 
-- Сделано: напрямую не переносилось.
-- Не сделано: custom additions для animal variants/tags пока не создавались.
+- Сделано: vanilla resources напрямую не заменялись.
+- Сделано: добавлены custom animal variants и точечные biome-tag additions без override vanilla Overworld.
 
 ## Группа 10. Advancements и discoverability
 
@@ -398,18 +404,18 @@ Template pools:
 - JSON formatting;
 - visual colors в новых биомах.
 
-Осталось разобрать:
+Осталось проверить свежим игровым логом:
 
-- `Empty height range`;
-- `Empty or non-existent pool: beyond_the_clouds:sky_village/hall`;
-- возможные structure height warnings;
-- возможные missing pool warnings;
-- возможные spawn/weight warnings.
+- нет ли новых `Empty height range` после замены negative-Y underground references;
+- нет ли новых structure height warnings;
+- нет ли новых missing pool warnings;
+- нет ли новых spawn/weight warnings.
 
 Статус:
 
 - Datapack грузится.
-- Идёт игровой тест.
+- Технические проверки JSON/source/custom references проходят.
+- Нужен свежий игровой лог после финальных правок.
 
 ## Порядок работ из исходного плана
 
@@ -424,10 +430,10 @@ Template pools:
 
 Фактический текущий этап:
 
-- пункты 1-4 сделаны первично;
-- пункт 5-6 скопированы и частично адаптированы, но требуют игрового теста;
-- пункт 7 не завершён;
-- пункт 8 впереди.
+- пункты 1-4 сделаны;
+- пункт 5-6 скопированы и адаптированы, структуры требуют только дальнейшего игрового теста;
+- пункт 7 сделан технически, loot остаётся проверить в игре;
+- пункт 8 сделан: неиспользуемые leftovers удалены, sanity-checks пройдены.
 
 ## Финальный тест
 
@@ -456,9 +462,9 @@ Template pools:
 
 Done:
 
-- added custom copies of source vanilla structures under `sky_islands:vanilla_adapted/*`;
-- added custom structure sets for villages, pillager outposts, ruined portals, mineshafts, igloos, woodland mansions, swamp huts, ancient cities, trail ruins, and trial chambers;
-- kept source spacing for structure sets that the source pack changed: ancient cities, trail ruins, trial chambers;
+- added currently retained custom copies of source vanilla structures under `sky_islands:vanilla_adapted/*`: mansion, pillager outpost, ruined portals, villages, swamp hut;
+- added currently retained custom structure sets for villages, pillager outposts, ruined portals, woodland mansions, and swamp huts;
+- removed custom ancient city, igloo, mineshaft, trail ruins, and trial chambers again after testing showed they are not needed;
 - copied source-modified village/outpost template pools under `sky_islands:vanilla_adapted/*`;
 - copied source-modified taiga village meeting point NBT under `sky_islands:vanilla_adapted/*`;
 - added pool aliases so adapted villages/outposts use the custom template pools without overriding `minecraft:*`;
