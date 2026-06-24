@@ -170,7 +170,7 @@
     ],
     [
       "sky_islands:vanilla_adapted/monster_room",
-      "minecraft:monster_room_deep"
+      "sky_islands:vanilla_adapted/monster_room_deep"
     ],
     [],
     [],
@@ -192,13 +192,9 @@
       "sky_islands:vanilla_adapted/ore_gold",
       "sky_islands:vanilla_adapted/ore_gold_lower",
       "sky_islands:vanilla_adapted/ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "sky_islands:vanilla_adapted/ore_diamond",
-      "sky_islands:vanilla_adapted/ore_diamond_medium",
-      "sky_islands:vanilla_adapted/ore_diamond_large",
-      "sky_islands:vanilla_adapted/ore_diamond_buried",
+      "sky_islands:vanilla_adapted/ore_redstone_lower",
       "sky_islands:vanilla_adapted/ore_lapis",
-      "minecraft:ore_lapis_buried",
+      "sky_islands:vanilla_adapted/ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
