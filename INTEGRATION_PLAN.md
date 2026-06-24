@@ -482,3 +482,9 @@ Still intentionally not copied:
 - `data/minecraft/worldgen/noise/temperature.json`;
 - `data/minecraft/advancement/adventure/adventuring_time.json`;
 - default/temperate animal variants with unconditional spawn conditions.
+## Update 2026-06-24: minecraft feature audit
+
+- Audited remaining biome minecraft:* placed-feature references against the source datapack and vanilla 1.21.11 worldgen JSON.
+- Kept minecraft:ore_copper out of direct biome refs by adding sky_islands:vanilla_adapted/ore_copper with non-negative Y; did the same for ore_emerald and ore_iron_middle.
+- Removed minecraft:fossil_lower from imported biome feature lists because vanilla ossil_lower uses minecraft:fossil_diamonds, which can reintroduce diamond ore generation.
+- Added transitively adapted wrappers for vanilla tree/mushroom vegetation placed/configured features that depended on source-overridden configured features.

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_boolean_selector",
+  "config": {
+    "feature_false": {
+      "feature": "sky_islands:vanilla_adapted/huge_brown_mushroom",
+      "placement": []
+    },
+    "feature_true": {
+      "feature": "sky_islands:vanilla_adapted/huge_red_mushroom",
+      "placement": []
+    }
+  }
+}

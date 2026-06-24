@@ -177,7 +177,7 @@
       "minecraft:ore_coal_upper",
       "minecraft:ore_coal_lower",
       "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
+      "sky_islands:vanilla_adapted/ore_iron_middle",
       "minecraft:ore_iron_small",
       "sky_islands:vanilla_adapted/ore_gold",
       "sky_islands:vanilla_adapted/ore_gold_lower",
@@ -185,12 +185,12 @@
       "sky_islands:vanilla_adapted/ore_redstone_lower",
       "sky_islands:vanilla_adapted/ore_lapis",
       "sky_islands:vanilla_adapted/ore_lapis_buried",
-      "minecraft:ore_copper",
+      "sky_islands:vanilla_adapted/ore_copper",
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
-      "minecraft:ore_emerald"
+      "sky_islands:vanilla_adapted/ore_emerald"
     ],
     [
       "minecraft:ore_infested"
@@ -205,7 +205,7 @@
       "sky_islands:vanilla_adapted/patch_grass_plain",
       "sky_islands:vanilla_adapted/patch_bush",
       "minecraft:flower_meadow",
-      "minecraft:trees_meadow",
+      "sky_islands:vanilla_adapted/trees_meadow",
       "minecraft:wildflowers_meadow"
     ],
     [
