@@ -17,9 +17,6 @@ execute if entity @s[type=minecraft:player] on vehicle run return run function b
 # Игрок с элитрами без транспорта
 execute if entity @s[type=minecraft:player] if data entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}] run return run function beyond_the_clouds:enter/player_with_elytra
 
-# Фигня какая-то
-##execute if entity @s[type=minecraft:player] if data entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}] on vehicle run return run function beyond_the_clouds:enter/player_with_elytra_on_vehicle
-
 # Игрок без элитр и без транспорта
 execute if entity @s[type=minecraft:player] run return run function beyond_the_clouds:enter/player_alone
 
