@@ -10,7 +10,7 @@ execute in minecraft:overworld run function beyond_the_clouds:tp/overworld_exit
 function beyond_the_clouds:leave/vehicle_mount_riders
 
 # teleport effect for both vehicle and riders
-function beyond_the_clouds:fx/transition_visual_vehicle_leave
+function beyond_the_clouds:fx/transition_visual_vehicle
 
 # clean up tags, remove forceload chunk
 function beyond_the_clouds:leave/vehicle_cleanup
