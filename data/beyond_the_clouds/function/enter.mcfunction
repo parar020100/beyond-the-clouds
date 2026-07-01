@@ -1,8 +1,12 @@
 # Entry dispatcher. Called for entities above Y512 in the overworld.
 
+function beyond_the_clouds:debug/log {message:"enter"}
+
 execute if entity @s[tag=btc.entering] run return 0
 execute if entity @s[tag=btc.leaving] run return 0
 tag @s add btc.entering
+
+function beyond_the_clouds:debug/log {message:"trying enter"}
 
 # A vehicle waits for its passenger to move the whole stack.
 execute on passengers run return 0
