@@ -1,4 +1,4 @@
-# No island: arrive at Y-40 and rise visibly above the void.
+# No island: arrive at world bottom and rise visibly above the void
 
 # tp to the bottom of the world
 function beyond_the_clouds:tp/sky_bottom

@@ -7,10 +7,10 @@ function beyond_the_clouds:enter/vehicle_prepare
 function beyond_the_clouds:enter/find_cloud_island
 
 # if island not found, rise from y=-40 with levitation, then descend using slow falling
-execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/no_island/player_on_mob
+execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/on_vehicle/rise_from_void
 
 # if island found, enter the island
-execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/on_island/vehicle_land_above_island
+execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/on_vehicle/land_above_island
 
 # teleport effect for both vehicle and riders
 function beyond_the_clouds:fx/transition_visual_vehicle

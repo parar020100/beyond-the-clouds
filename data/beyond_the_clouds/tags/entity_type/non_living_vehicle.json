@@ -20,6 +20,6 @@
     { "id": "minecraft:mangrove_chest_boat", "required": false },
     { "id": "minecraft:bamboo_raft", "required": false },
     { "id": "minecraft:bamboo_chest_raft", "required": false },
-    { "id": "minecraft:minecart", "required": false },
+    { "id": "minecraft:minecart", "required": false }
   ]
 }
