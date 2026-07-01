@@ -1,8 +1,12 @@
 # Leave dispatcher. Called for entities below Y-48 in clouds.
 
+function beyond_the_clouds:debug/log {message:"leave"}
+
 execute if entity @s[tag=btc.entering] run return 0
 execute if entity @s[tag=btc.leaving] run return 0
 tag @s add btc.leaving
+
+function beyond_the_clouds:debug/log {message:"trying leave"}
 
 # A vehicle waits for its passenger to move the whole stack.
 execute on passengers run return 0
