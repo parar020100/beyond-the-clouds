@@ -2,7 +2,7 @@
 function beyond_the_clouds:debug/log {message:"fx/transition_visual"}
 
 
-scoreboard players set @s btc.fx 200
+scoreboard players set @s btc.fx 40
 
 schedule function beyond_the_clouds:fx/landing_fx 1t
 

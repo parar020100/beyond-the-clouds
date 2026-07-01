@@ -1,4 +1,4 @@
-function beyond_the_clouds:debug/log {message:"fx/landing_fx"}
+#function beyond_the_clouds:debug/log {message:"fx/landing_fx"}
 
 execute in minecraft:overworld as @e[scores={btc.fx=1..}] at @s run function beyond_the_clouds:fx/landing_fx_emit
 execute in beyond_the_clouds:beyond_the_clouds as @e[scores={btc.fx=1..}] at @s run function beyond_the_clouds:fx/landing_fx_emit
