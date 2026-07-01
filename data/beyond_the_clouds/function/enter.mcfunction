@@ -1,6 +1,8 @@
 # Entry dispatcher. Called for entities above Y512 in the overworld.
 
-execute if entity @s[type=minecraft:player] run advancement revoke @s only beyond_the_clouds:enter_dimension
+execute if entity @s[tag=btc.entering] run return 0
+execute if entity @s[tag=btc.leaving] run return 0
+tag @s add btc.entering
 
 # A vehicle waits for its passenger to move the whole stack.
 execute on passengers run return 0
