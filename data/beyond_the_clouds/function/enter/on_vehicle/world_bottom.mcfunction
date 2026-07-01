@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/on_vehicle/world_bottom"}
+
 # Player riding a happy ghast: clouds Y40, no potion effects.
 
 # clear tags from all entities; add vehicle tag to vehicle; add rider tag to passengers

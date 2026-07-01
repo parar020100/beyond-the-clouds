@@ -1,4 +1,6 @@
 # Same long visual effect for entering and leaving clouds.
+function beyond_the_clouds:debug/log {message:"fx/transition_visual"}
+
 
 scoreboard players set @s btc.fx 200
 

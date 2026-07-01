@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/vehicle_cleanup"}
+
 # stop forceloading the chunk
 execute at @s in beyond_the_clouds:beyond_the_clouds run forceload remove ~ ~
 

@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/vehicle_prepare"}
+
 # @s is the vehicle in overworld. Mark, dismount, and load the target clouds chunk.
 
 # clear tags from all entities, mark current vehicle and riders, dismount

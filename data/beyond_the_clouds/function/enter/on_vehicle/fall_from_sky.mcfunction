@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/on_vehicle/fall_from_sky"}
+
 # no island found, fall from the sky
 function beyond_the_clouds:tp/sky_top
 

@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/on_vehicle/island_or_rise"}
+
 # Player on a living/non-listed vehicle: same island logic as an unmounted player.
 
 # clear tags from all entities; add vehicle tag to vehicle; add rider tag to passengers

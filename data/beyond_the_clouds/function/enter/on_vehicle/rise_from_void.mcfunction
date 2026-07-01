@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/on_vehicle/rise_from_void"}
+
 # tp to the bottom of the world
 function beyond_the_clouds:tp/sky_bottom
 

@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/vehicle_mount_riders"}
+
 # Move riders from overworld to the vehicle in clouds and mount them back.
 
 # teleport riders above the vehicle
