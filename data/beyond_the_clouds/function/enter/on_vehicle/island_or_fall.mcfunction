@@ -1,3 +1,5 @@
+function beyond_the_clouds:debug/log {message:"enter/on_vehicle/island_or_fall"}
+
 # Player on a boat/minecart-like vehicle: island if possible, otherwise sky top and slow falling if applicable.
 
 # clear tags from all entities; add vehicle tag to vehicle; add rider tag to passengers

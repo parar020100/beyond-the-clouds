@@ -1,4 +1,6 @@
 # stop forceloading the chunk
+function beyond_the_clouds:debug/log {message:"leave/vehicle_cleanup"}
+
 execute at @s in minecraft:overworld run forceload remove ~ ~
 
 # remove rider tag

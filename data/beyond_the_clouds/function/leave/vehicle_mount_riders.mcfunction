@@ -1,4 +1,6 @@
 # Move riders from clouds to the vehicle in overworld and mount them back.
+function beyond_the_clouds:debug/log {message:"leave/vehicle_mount_riders"}
+
 
 # teleport riders above the vehicle
 execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_rider] in minecraft:overworld at @e[tag=btc.transfer_vehicle,limit=1] run tp @s ~ ~1 ~

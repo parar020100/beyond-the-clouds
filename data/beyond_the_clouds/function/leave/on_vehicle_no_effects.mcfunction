@@ -1,4 +1,6 @@
 # clear tags from all entities; add vehicle tag to vehicle; add rider tag to passengers
+function beyond_the_clouds:debug/log {message:"leave/on_vehicle_no_effects"}
+
 function beyond_the_clouds:leave/vehicle_prepare
 
 # teleport to the overworld sky
