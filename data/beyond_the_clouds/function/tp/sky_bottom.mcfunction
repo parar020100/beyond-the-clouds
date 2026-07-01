@@ -1,1 +1,1 @@
-tp @s ~ -40 ~
+execute in beyond_the_clouds:beyond_the_clouds run tp @s ~ -40 ~

@@ -1,1 +1,1 @@
-tp @s ~ 500 ~
+execute in minecraft:overworld run tp @s ~ 500 ~
