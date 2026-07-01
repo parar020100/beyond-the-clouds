@@ -1,5 +1,3 @@
-# Player without elytra and without vehicle: prefer an island, otherwise rise from Y40.
-
 # load the chunk for teleporting
 execute at @s in beyond_the_clouds:beyond_the_clouds run forceload add ~ ~
 
@@ -7,10 +5,10 @@ execute at @s in beyond_the_clouds:beyond_the_clouds run forceload add ~ ~
 function beyond_the_clouds:enter/find_cloud_island
 
 # if island not found, rise from world bottom with levitation, then descend using slow falling
-execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/no_island/player_alone
+execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/rise_from_void
 
 # if island found, enter the island
-execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/on_island/player_alone
+execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/land_above_island
 
 # teleport effect
 function beyond_the_clouds:fx/transition_visual

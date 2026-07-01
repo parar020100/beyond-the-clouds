@@ -6,22 +6,22 @@ execute if entity @s[type=minecraft:player] run advancement revoke @s only beyon
 execute on passengers run return 0
 
 # Игрок на гасте
-execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=minecraft:happy_ghast] run return run function beyond_the_clouds:leave/player_on_ghast
+execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=minecraft:happy_ghast] run return run function beyond_the_clouds:leave/on_vehicle_no_effects
 
 # Игрок, сидит на неодушевлённом транспортном средстве
-execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=#beyond_the_clouds:non_living_vehicle] run return run function beyond_the_clouds:leave/player_on_transport
+execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=#beyond_the_clouds:non_living_vehicle] run return run function beyond_the_clouds:leave/on_vehicle_no_effects
 
 # Игрок, сидит на мобе
-execute if entity @s[type=minecraft:player] on vehicle run return run function beyond_the_clouds:leave/player_on_mob
+execute if entity @s[type=minecraft:player] on vehicle run return run function beyond_the_clouds:leave/on_vehicle_with_effects
 
 # Игрок с элитрами без транспорта
-execute if entity @s[type=minecraft:player] if data entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}] run return run function beyond_the_clouds:leave/player_with_elytra
+execute if entity @s[type=minecraft:player] if data entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}] run return run function beyond_the_clouds:leave/alone_no_effects
 
 # Игрок без транспорта
-execute if entity @s[type=minecraft:player] run return run function beyond_the_clouds:leave/player_alone
+execute if entity @s[type=minecraft:player] run return run function beyond_the_clouds:leave/alone_with_effects
 
 # Энтити на транспорте без игрока
-execute on vehicle run return run function beyond_the_clouds:leave/entity_on_vehicle
+execute on vehicle run return run function beyond_the_clouds:leave/on_vehicle_with_effects
 
 # Другие энтити
-function beyond_the_clouds:leave/entity_without_player
+function beyond_the_clouds:leave/alone_with_effects
