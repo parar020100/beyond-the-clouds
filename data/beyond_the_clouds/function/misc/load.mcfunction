@@ -1,4 +1,4 @@
-# Таймер потока частиц при переходе между мирами (см. misc/landing_fx)
+# Timer of the particle stream when transitioning between worlds (see misc/landing_fx)
 scoreboard objectives add btc.fx dummy
 scoreboard objectives add btc.y dummy
 scoreboard objectives add btc.continuous_effects_timer dummy
