@@ -9,12 +9,12 @@ function beyond_the_clouds:enter/vehicle_prepare
 execute in beyond_the_clouds:beyond_the_clouds run function beyond_the_clouds:tp/sky_bottom
 
 # mount the riders
-function beyond_the_clouds:enter/vehicle_mount_riders
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:enter/vehicle_mount_riders
 
 # teleport effect for both vehicle and riders
-function beyond_the_clouds:fx/transition_visual_vehicle
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:fx/transition_visual_vehicle
 
 # clean up tags, remove forceload chunk
-function beyond_the_clouds:enter/vehicle_cleanup
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:enter/vehicle_cleanup
 
 return 1
