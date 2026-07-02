@@ -1,4 +1,4 @@
-# Один кадр потока частиц для @s (вызывается из misc/landing_fx, выполняется "at @s")
+# A single particle frame for @s (called from misc/landing_fx, executed "at @s")
 #function beyond_the_clouds:debug/log {message:"fx/landing_fx_emit"}
 
 particle minecraft:cloud ~ ~2 ~ 0.2 0.4 0.2 0.2 1
