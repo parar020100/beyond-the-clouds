@@ -15,6 +15,10 @@ function beyond_the_clouds:debug/log {message:"enter/alone/world_bottom: dimensi
 # teleport effect
 execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:fx/transition_visual
 
-# Clean up using the recovered entity rather than the invalid pre-teleport @s.
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:enter/entity_cleanup
+# Always release the destination chunk, even if the transferred entity was lost.
+execute in beyond_the_clouds:beyond_the_clouds run forceload remove ~ ~
+
+# clean up tags
+function beyond_the_clouds:common/clear_all_transfer_tags
+
 function beyond_the_clouds:debug/log {message:"enter/alone/world_bottom: complete"}

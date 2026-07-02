@@ -13,6 +13,10 @@ function beyond_the_clouds:debug/log {message:"leave/alone_no_effects: dimension
 # teleport effect
 execute in minecraft:overworld as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:fx/transition_visual
 
-# Clean up using the recovered entity rather than the invalid pre-teleport @s.
-execute in minecraft:overworld as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:leave/entity_cleanup
+# Always release the destination chunk, even if the transferred entity was lost.
+execute in minecraft:overworld run forceload remove ~ ~
+
+# clean up tags
+function beyond_the_clouds:common/clear_all_transfer_tags
+
 function beyond_the_clouds:debug/log {message:"leave/alone_no_effects: complete"}
