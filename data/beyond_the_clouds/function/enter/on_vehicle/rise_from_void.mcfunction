@@ -6,6 +6,9 @@ function beyond_the_clouds:tp/sky_bottom
 # mount the riders
 function beyond_the_clouds:enter/vehicle_mount_riders
 
-# give the transport and its riders levitation for 10 seconds, then slow falling for 30
-function beyond_the_clouds:effects/rise_from_void
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_rider] run function beyond_the_clouds:effects/rise_from_void
+# we must receive short levitation and then slow falling
+tag @s add btc.continuous_rise
+execute in beyond_the_clouds:beyond_the_clouds run tag @e[tag=btc.transfer_rider] add btc.continuous_rise
+
+# refresh effects until the client re-syncs
+function beyond_the_clouds:effects/continuous_effects_apply_start

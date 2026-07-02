@@ -7,16 +7,19 @@ function beyond_the_clouds:leave/vehicle_prepare
 execute in minecraft:overworld run function beyond_the_clouds:tp/overworld_exit
 
 # mount the riders
-function beyond_the_clouds:leave/vehicle_mount_riders
+execute in minecraft:overworld as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:leave/vehicle_mount_riders
 
-# give the transport and its riders short slow falling
-function beyond_the_clouds:effects/leave_fall
-execute in minecraft:overworld as @e[tag=btc.transfer_rider] run function beyond_the_clouds:effects/leave_fall
+# we must receive short slow falling for a controlled descent
+execute in minecraft:overworld run tag @e[tag=btc.transfer_vehicle] add btc.continuous_descend
+execute in minecraft:overworld run tag @e[tag=btc.transfer_rider] add btc.continuous_descend
+
+# refresh effects until the client re-syncs
+function beyond_the_clouds:effects/continuous_effects_apply_start
 
 # teleport effect for both vehicle and riders
-function beyond_the_clouds:fx/transition_visual_vehicle
+execute in minecraft:overworld as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:fx/transition_visual_vehicle
 
 # clean up tags, remove forceload chunk
-function beyond_the_clouds:leave/vehicle_cleanup
+execute in minecraft:overworld as @e[tag=btc.transfer_vehicle] at @s run function beyond_the_clouds:leave/vehicle_cleanup
 
 return 1
