@@ -30,4 +30,4 @@ execute if entity @s[type=minecraft:player] run return run function beyond_the_c
 execute if entity @s on vehicle run return run function beyond_the_clouds:enter/on_vehicle/island_or_fall
 
 # Другие энтити
-function beyond_the_clouds:enter/alone/fall_from_sky
+function beyond_the_clouds:enter/alone/island_or_fall
