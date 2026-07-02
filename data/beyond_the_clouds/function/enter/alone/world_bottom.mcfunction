@@ -2,6 +2,9 @@
 
 function beyond_the_clouds:debug/log {message:"enter/alone/world_bottom"}
 
+# Mark @s so it can be recovered if the dimension teleport recreates it.
+function beyond_the_clouds:common/entity_prepare
+
 # load the chunk for teleporting
 execute at @s in beyond_the_clouds:beyond_the_clouds run forceload add ~ ~
 
@@ -10,8 +13,8 @@ execute in beyond_the_clouds:beyond_the_clouds run function beyond_the_clouds:tp
 function beyond_the_clouds:debug/log {message:"enter/alone/world_bottom: dimension teleport complete"}
 
 # teleport effect
-function beyond_the_clouds:fx/transition_visual
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:fx/transition_visual
 
-# stop forceloading the chunk
-execute at @s in beyond_the_clouds:beyond_the_clouds run forceload remove ~ ~
+# Clean up using the recovered entity rather than the invalid pre-teleport @s.
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:enter/entity_cleanup
 function beyond_the_clouds:debug/log {message:"enter/alone/world_bottom: complete"}
