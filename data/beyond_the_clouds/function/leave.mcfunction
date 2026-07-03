@@ -21,7 +21,7 @@ execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=#beyond
 execute if entity @s[type=minecraft:player] on vehicle run return run function beyond_the_clouds:leave/on_vehicle_with_effects
 
 # Player with elytra and no vehicle
-execute if entity @s[type=minecraft:player] if data entity @s Inventory[{Slot:102b,id:"minecraft:elytra"}] run return run function beyond_the_clouds:leave/alone_no_effects
+execute if entity @s[type=minecraft:player] if items entity @s armor.chest minecraft:elytra run return run function beyond_the_clouds:leave/alone_no_effects
 
 # Player without vehicle
 execute if entity @s[type=minecraft:player] run return run function beyond_the_clouds:leave/alone_with_effects
