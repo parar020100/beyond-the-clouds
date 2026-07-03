@@ -37,11 +37,12 @@ Here are some of the upgrades
 ## Notice
 **All** credit for the six original biomes and the sky village goes to [NotAFunnyBee](https://modrinth.com/user/NotAFunnyBee) in the original [Beyond The Clouds](https://modrinth.com/datapack/beyond-the-clouds) datapack.  
   
-The credit for porting the addon to 1.21 and some features goes to [OrangeYTLol](https://modrinth.com/user/OrangeYTLol).  
+The credit for porting the addon to 1.21 and some features goes to [OrangeYTLol](https://modrinth.com/user/OrangeYTLol) in his [Beyond The Clouds Reborn
+](https://modrinth.com/datapack/beyond-the-clouds-reborn) datapack.  
   
-The credit for Maa's Sky Islands and world generation goes to [ListenMaaFlow](https://modrinth.com/user/ListenMaaFlow)
+The credit for Maa's Sky Islands and world generation goes to [ListenMaaFlow](https://modrinth.com/user/ListenMaaFlow) in his [Maa's Sky Islands](https://modrinth.com/datapack/maas-sky-islands) and [Maa's Sky Islands Classic](https://modrinth.com/datapack/maa-sky-islands-classic) datapacks.
   
-If any of the original addon authors want this one removed, please contact me
+If any of the original addon authors want this fork removed, please contact me
   
   
   
