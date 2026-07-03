@@ -13,5 +13,7 @@ schedule clear beyond_the_clouds:misc/check_enter
 function beyond_the_clouds:misc/check_enter
 schedule clear beyond_the_clouds:misc/check_leave
 function beyond_the_clouds:misc/check_leave
+schedule clear beyond_the_clouds:misc/check_falling_block_leave
+function beyond_the_clouds:misc/check_falling_block_leave
 schedule clear beyond_the_clouds:misc/check_transition
 function beyond_the_clouds:misc/check_transition

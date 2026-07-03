@@ -11,6 +11,9 @@ function beyond_the_clouds:debug/log {message:"trying leave"}
 # A vehicle waits for its passenger to move the whole stack.
 execute on passengers run return 0
 
+# Falling blocks need an age reset and cannot receive movement effects.
+execute if entity @s[type=minecraft:falling_block] run return run function beyond_the_clouds:leave/falling_block
+
 # Player, sitting on a happy ghast
 execute if entity @s[type=minecraft:player] on vehicle if entity @s[type=minecraft:happy_ghast] run return run function beyond_the_clouds:leave/on_vehicle_no_effects
 
