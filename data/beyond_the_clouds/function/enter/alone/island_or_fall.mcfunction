@@ -6,18 +6,22 @@ function beyond_the_clouds:common/entity_prepare
 # load the chunk for teleporting
 execute at @s in beyond_the_clouds:beyond_the_clouds run forceload add ~ ~
 
-# search for an island to land on; if not found, add btc.no_cloud_island tag to @s
+# decide where to arrive; sets btc.no_cloud_island on @s, nothing is moved yet
 function beyond_the_clouds:enter/find_cloud_island
 function beyond_the_clouds:debug/log {message:"enter/alone/island_or_fall: island search complete"}
 
+# queue the arrival effect before the jump
+tag @s add btc.pending_fx
+schedule function beyond_the_clouds:misc/post_transfer 1t append
+
+# Each branch below is a single cross-dimension jump made while @s still exists, so nothing
+# has to be found again in the clouds afterwards.
+
 # if island not found, fall from sky top with slow falling if applicable
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/fall_from_sky
+execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/fall_from_sky
 
 # if island found, enter the island
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/land_above_island
-
-# teleport effect
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s run function beyond_the_clouds:fx/transition_visual
+execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:enter/alone/land_above_island
 
 # Always release the destination chunk, even if the transferred entity was lost.
 execute in beyond_the_clouds:beyond_the_clouds run forceload remove ~ ~

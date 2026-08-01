@@ -19,6 +19,9 @@ execute in minecraft:overworld as @e[tag=btc.continuous_fall] run function beyon
 execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.continuous_descend] run function beyond_the_clouds:effects/short_descend
 execute in minecraft:overworld as @e[tag=btc.continuous_descend] run function beyond_the_clouds:effects/short_descend
 
+execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.continuous_hover] run function beyond_the_clouds:effects/short_hover
+execute in minecraft:overworld as @e[tag=btc.continuous_hover] run function beyond_the_clouds:effects/short_hover
+
 # count the window down; keep ticking while it is open, otherwise drop the profile tags
 scoreboard players remove #btc.continuous_effects btc.continuous_effects_timer 1
 

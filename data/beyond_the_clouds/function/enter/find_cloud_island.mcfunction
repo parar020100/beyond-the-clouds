@@ -1,26 +1,17 @@
-# Move @s into clouds and mark btc.no_cloud_island when there is no surface at this X/Z.
+# Decide whether there is a surface to land on at this X/Z in the clouds. Nothing is moved:
+# a heightmap probe only needs a position, and @s is still in the overworld where it is
+# addressable. The verdict is stored as a tag, which survives the teleport recreating @s.
+#
+# `positioned over <heightmap>` does not run the rest of the chain at all when the column is
+# empty - it does not fall through with Y at the world bottom. So the verdict is built the
+# safe way round: assume there is no island, and only withdraw that when the chain both
+# resolves and finds a real block under the surface. An unreachable or unloaded column then
+# degrades to "no island", which is the harmless direction.
 
 function beyond_the_clouds:debug/log {message:"enter/find_cloud_island"}
 
-# remove the tag used for finding a cloud island
-tag @s remove btc.no_cloud_island
+tag @s add btc.no_cloud_island
+execute at @s in beyond_the_clouds:beyond_the_clouds positioned over motion_blocking unless block ~ ~-1 ~ minecraft:void_air run tag @s remove btc.no_cloud_island
 
-# teleport to y=0 in the clouds
-execute in beyond_the_clouds:beyond_the_clouds run tp @s ~ 0 ~
-function beyond_the_clouds:debug/log {message:"enter/find_cloud_island: dimension teleport complete"}
-
-# search for a block above; if found, teleport onto it.
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] at @s positioned over motion_blocking run tp @s ~ ~ ~
-
-function beyond_the_clouds:debug/log {message:"enter/find_cloud_island: heightmap teleport complete"}
-
-# save result height
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] store result score @s btc.y run data get entity @s Pos[1] 1
-
-# if still at y=0 there was no surface -> mark no island
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.transfer_entity] if score @s btc.y matches 0 run tag @s add btc.no_cloud_island
-
-# debug: report the no-island verdict
-execute in beyond_the_clouds:beyond_the_clouds as @e[tag=btc.no_cloud_island] run function beyond_the_clouds:debug/log {message:"find_cloud_island: NO island -> rise_from_void"}
-
-function beyond_the_clouds:debug/log {message:"enter/find_cloud_island: complete"}
+execute if entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:debug/log {message:"enter/find_cloud_island: NO island"}
+execute unless entity @s[tag=btc.no_cloud_island] run function beyond_the_clouds:debug/log {message:"enter/find_cloud_island: island found"}

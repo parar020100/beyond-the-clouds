@@ -7,9 +7,6 @@ function beyond_the_clouds:common/clear_all_transfer_tags
 tag @s add btc.transfer_entity
 tag @s add btc.transfer_vehicle
 
-# mark passengers as current riders
+# Mark passengers as current riders. They stay mounted on purpose: a cross-dimension
+# teleport of the vehicle carries its passengers along and re-seats them afterwards.
 execute on passengers run tag @s add btc.transfer_rider
-
-# dismount passengers
-execute on passengers run ride @s dismount
-
