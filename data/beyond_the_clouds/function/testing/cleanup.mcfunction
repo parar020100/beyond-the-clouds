@@ -8,6 +8,10 @@ tag @s add btc.testing.self
 execute on vehicle run ride @e[tag=btc.testing.self,limit=1] dismount
 tag @s remove btc.testing.self
 
+# служебная метка подъёма транспорта из t21_go/t28_go, если функция оборвалась
+execute in minecraft:overworld run tag @e[tag=btc.test.lift] remove btc.test.lift
+execute in beyond_the_clouds:beyond_the_clouds run tag @e[tag=btc.test.lift] remove btc.test.lift
+
 # помеченные сущности - в обоих измерениях, где бы ни оказались
 execute in minecraft:overworld run kill @e[tag=btc.test]
 execute in beyond_the_clouds:beyond_the_clouds run kill @e[tag=btc.test]
